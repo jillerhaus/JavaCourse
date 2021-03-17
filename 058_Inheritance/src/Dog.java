@@ -39,11 +39,11 @@ public class Dog extends Animal{
 
     public void walk() {
         System.out.println("Dog.walk() called");
-        move(5);
+        super.move(5);
     }
 
     public void run() {
         System.out.println("Dog.run() called");
-        super.move(10);
+        move(10);
     }
 }
