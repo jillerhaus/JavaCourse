@@ -1,12 +1,13 @@
 public class Dog {
-    private static String name;
-    // is a static variable, so shared between instances
 
-    public Dog (String name) {
-        Dog.name = name;
+    public void bark() {
+        System.out.println("woof");
     }
+}
 
-    public void printName() {
-        System.out.println("name = " + name);
+class DogMain {
+    public static void main(String[] args) {
+        Dog rex = new Dog(); // create instance
+        rex.bark(); // call isntatance method
     }
 }
