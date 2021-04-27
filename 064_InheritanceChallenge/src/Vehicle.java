@@ -1,18 +1,53 @@
 class Vehicle {
     int speed;
-    public Vehicle() {
+    private String name;
+    private String size;
+    private int direction;
+
+
+    public Vehicle(int speed, String name, String size, int direction) {
         this.speed = 0;
+        this.name = name;
+        this.size = size;
+        this.direction = 0;
+    }
+
+    public Vehicle() {
+        this.name = "generic Vehicle";
+        this.speed = 0;
+        this.direction = 0;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getSize() {
+        return this.size;
+    }
+
+    public String getDirection() {
+        return this.direction;
+    }
+
+    public int getSpeed() {
+        return this.speed;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+    public void setDirection(String direction) {
+        this.direction = direction;
     }
 }
 
-class MainVehicle {
-    public static void main(String[] args) {
-        // Challenge
-        // Start with a base class Vehicle, then create a Car class that inherits from Vehicle.
-        // Finally create another class, a specific type of Car that inherits from the Car class
-        // You should be able to handle steering, changing gears, and moving (speed in other words)
-        // You will want to decide where to put the appropriate state and behaviors (fields and methods)
-        // As mentioned above, changing gears, increasing/decreasing speed should be included.
-        // For your specific type of vehicle you will want to add something unique
-    }
-}
